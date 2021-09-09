@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    //    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "baseUrl": "./src",
+    "lib": ["ESNext"],
+    "paths": {
+      "@config/*": ["./config/*"],
+      "@graphql/*": ["./graphql/*"],
+      //  "@utils/*": ["./utils/*"],
+      "@db/*": ["./DB/*"],
+      "@src/*": ["./*"]
+    },
+    "typeRoots": ["./typings"],
+    "rootDirs": [],
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
+}
